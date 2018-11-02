@@ -1,0 +1,142 @@
+{
+    "list1": [{
+            "img": "img/list/1.gif",
+            "title": "美食"
+        },
+        {
+            "img": "img/list/2.gif",
+            "title": "猫眼电影"
+        },
+        {
+            "img": "img/list/3.gif",
+            "title": "酒店"
+        }, {
+            "img": "img/list/4.gif",
+            "title": "休闲娱乐"
+        }, {
+            "img": "img/list/5.gif",
+            "title": "外卖"
+        }, {
+            "img": "img/list/6.gif",
+            "title": "KTV"
+        }, {
+            "img": "img/list/7.gif",
+            "title": "周边游"
+        }, {
+            "img": "img/list/8.gif",
+            "title": "丽人"
+        }, {
+            "img": "img/list/9.gif",
+            "title": "小吃快餐"
+        }, {
+            "img": "img/list/10.gif",
+            "title": "火车票"
+        }
+    ],
+    "list2": [{
+            "img": "img/list/11.gif",
+            "title": "生活服务"
+        },
+        {
+            "img": "img/list/12.gif",
+            "title": "今日新单"
+        },
+        {
+            "img": "img/list/13.gif",
+            "title": "足疗/按摩"
+        }, {
+            "img": "img/list/14.gif",
+            "title": "甜点饮品"
+        }, {
+            "img": "img/list/15.gif",
+            "title": "母婴亲子"
+        }, {
+            "img": "img/list/16.gif",
+            "title": "学习培训"
+        }, {
+            "img": "img/list/17.gif",
+            "title": "结婚"
+        }, {
+            "img": "img/list/18.gif",
+            "title": "家装"
+        }, {
+            "img": "img/list/19.gif",
+            "title": "汽车服务"
+        }, {
+            "img": "img/list/20.gif",
+            "title": "全部分类"
+        }
+    ],
+    "food": [{
+        "img": "img/food/1.jpg",
+        "title": "醉面 一碗醉香的肉酱面",
+        "des": "[7店通用]单人用餐",
+        "price": 17.5,
+        "shopPrice": 20,
+        "num": 21356
+    }, {
+        "img": "img/food/2.jpg",
+        "title": "全聚德",
+        "des": "[东城区]精品烤鸭3-4人餐1份",
+        "price": 398,
+        "shopPrice": 498,
+        "num": 3311
+    }, {
+        "img": "img/food/3.jpg",
+        "title": "奶茶嫁给粉",
+        "des": "[5店通用]10元代金券1张，可叠加",
+        "price": 8.5,
+        "shopPrice": 10,
+        "num": 61111
+    }, {
+        "img": "img/food/4.jpg",
+        "title": "亲爱的锅包YOU",
+        "des": "[2店通用]锅包肉一份，提供免费WiFi",
+        "price": 25.9,
+        "shopPrice": 28,
+        "num": 697
+    }, {
+        "img": "img/food/5.jpg",
+        "title": "超值4件套",
+        "des": "[北京等]超值4件套",
+        "price": 24,
+        "shopPrice": 37.5,
+        "num": 35657
+    }, {
+        "img": "img/food/6.jpg",
+        "title": "华莱士",
+        "des": "[15店通用]鸡腿堡+薯条+中杯可乐1份",
+        "price": 13,
+        "shopPrice": 31,
+        "num": 3567
+    }, {
+        "img": "img/food/7.jpg",
+        "title": "功福咖小蹄大作",
+        "des": "[中关村]烤猪蹄一份，包间免费",
+        "price": 15.3,
+        "shopPrice": 18,
+        "num": 25026
+    }, {
+        "img": "img/food/8.jpg",
+        "title": "栗记仙豆糕",
+        "des": "[中关村]经典双拼，建议单人使用",
+        "price": 15,
+        "shopPrice": 18,
+        "num": 234
+    }, {
+        "img": "img/food/9.jpg",
+        "title": "丁丁洋回转自助火锅",
+        "des": "[5店通用]单人自助火锅",
+        "price": 39.9,
+        "shopPrice": 42.5,
+        "num": 292992
+    }, {
+        "img": "img/food/10.jpg",
+        "title": "汉斯特自助烤肉",
+        "des": "[良乡]自助晚餐",
+        "price": 53.9,
+        "shopPrice": 59,
+        "num": 61738
+    }]
+
+}

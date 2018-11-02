@@ -81,10 +81,172 @@ section {
     @include flex;
     overflow: hidden;
     overflow-y: scroll;
+    background-color: #f0efed;
+    .swiper-container {
+        width: 100%;
+        background: #fff;
+        .swiper-wrapper {
+            width: 100%;
+            .swiper-slide {
+                width: 100%;
+                img {
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+        .swiper-pagination {
+            .swiper-pagination-bullet {
+                width: pxTorem(8px);
+                height: pxTorem(8px);
+                margin: 0 pxTorem(2px);
+            }
+            .swiper-pagination-bullet-active {
+                background: #f60;
+            }
+        }
+    }
+    .myswiper {
+        width: 100%;
+        border-top: 1px solid #DDD8CE;
+        border-bottom: 1px solid #DDD8CE;
+        padding-bottom: pxTorem(30px);
+        .swiper-wrapper {
+            width: 100%;
+            .swiper-slide {
+                width: 100%;
+                .list1,
+                .list2 {
+                    @include box_flex;
+                    @include flexWrap(wrap);
+                    @include justify(space-around);
+                    li {
+                        width: 19%;
+                        height: pxTorem(80px);
+                        @include box_flex;
+                        @include direction(column);
+                        @include justify(space-around);
+                        @include align;
+                        margin: pxTorem(7px) 0;
+                        img {
+                            display: block;
+                            width: pxTorem(50px);
+                            height: pxTorem(50px);
+                        }
+                        span {
+                            text-align: center;
+                            font-size: pxTorem(14px);
+                            font-family: "Microsoft yahei";
+                            color: #666;
+                        }
+                    }
+                }
+            }
+        }
+        .swiper-pagination {
+            height: pxTorem(10px);
+            padding: pxTorem(20px) 0;
+            .swiper-pagination-bullet {
+                width: pxTorem(9px);
+                height: pxTorem(9px);
+                margin: 0 pxTorem(7px);
+            }
+            .swiper-pagination-bullet-active {
+                background: #06c1ae;
+            }
+        }
+    }
+    .guesslike {
+        width: 100%;
+        margin-top: pxTorem(20px);
+        background: #fff;
+        padding-left: pxTorem(15px);
+        h2 {
+            width: 100%;
+            height: pxTorem(35px);
+            line-height: pxTorem(35px);
+            padding: 0 pxTorem(15px);
+            font-size: pxTorem(16px);
+            font-style: normal;
+            border-bottom: pxTorem(1px) solid #DDD8CE;
+        }
+        .scroll {
+            width: 100%;
+            height: pxTorem(900px);
+            overflow: hidden;
+        }
+        .box {
+            width: 100%;
+            height: 105%;
+            >span {
+                width: 100%;
+                height: pxTorem(40px);
+                text-align: center;
+                line-height: pxTorem(40px);
+            }
+            ul {
+                width: 100%;
+                li {
+                    width: 100%;
+                    height: pxTorem(90px);
+                    @include box_flex;
+                    @include justify(space-between);
+                    @include align;
+                    padding: 10px;
+                    border-bottom: pxTorem(1px) solid #DDD8CE;
+                    .des {
+                        height: 100%;
+                        @include box_flex;
+                        img {
+                            width: pxTorem(80px);
+                            height: pxTorem(80px);
+                            display: block;
+                        }
+                        .info {
+                            @include box_flex;
+                            @include direction(column);
+                            @include justify(space-around);
+                            padding: 0 pxTorem(10px);
+                            .info-t {
+                                h3 {
+                                    font-size: pxTorem(14px);
+                                }
+                                span {
+                                    font-size: pxTorem(12px);
+                                }
+                            }
+                            p {
+                                @include box_flex;
+                                span {
+                                    color: #06c1ae;
+                                    font-size: pxTorem(12px);
+                                    margin: 0 pxTorem(3px);
+                                    b {
+                                        font-size: pxTorem(14px);
+                                    }
+                                }
+                                em {
+                                    color: #666;
+                                    font-size: pxTorem(12px);
+                                }
+                            }
+                        }
+                    }
+                    .count {
+                        @include box_flex;
+                        height: 100%;
+                        span {
+                            align-self: flex-end;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 footer {
     width: 100%;
-    height: pxTorem(100px);
+    height: pxTorem(44px);
     background: #f0efed;
 }
