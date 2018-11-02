@@ -133,3 +133,26 @@ $.ajax({
         }
     }
 })
+var timer = null;
+$('form input').on('input', function() {
+    var val = $(this).val();
+    clearTimeout(timer);
+    if (val) {
+        timer = setTimeout(function() {
+            $.ajax({
+                url: '/api/data',
+                success: function(data) {
+                    var obj = JSON.parse(data);
+                    var str = '';
+                    obj.data.news.forEach(function(file) {
+                        if (file.title.indexOf(val) != -1) {
+                            str += `<li>${file.title}</li>`;
+                        }
+                    })
+                    $('.news').html(str);
+                }
+            })
+        }, 200)
+    }
+
+})

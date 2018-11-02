@@ -44,6 +44,7 @@ header {
         padding: 0 pxTorem(10px);
         @include box_flex;
         @include align;
+        position: relative;
         span {
             width: pxTorem(25px);
             color: #fff;
@@ -58,6 +59,22 @@ header {
         input::-webkit-input-placeholder {
             color: #68dbce;
             font-size: pxTorem(16px);
+        }
+        .news {
+            width: 100%;
+            position: absolute;
+            z-index: 9999;
+            top: pxTorem(35px);
+            left: 0;
+            background: #c9c5c5c7;
+            li {
+                width: 100%;
+                height: pxTorem(25px);
+                line-height: pxTorem(25px);
+                border-bottom: solid pxTorem(1px) #ccc;
+                color: #666;
+                padding: 0 pxTorem(10px);
+            }
         }
     }
     .mine {
