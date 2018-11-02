@@ -248,5 +248,29 @@ section {
 footer {
     width: 100%;
     height: pxTorem(44px);
-    background: #f0efed;
+    ul {
+        widows: 100px;
+        height: 100%;
+        @include box_flex;
+        @include justify(space-between);
+        padding: 0 pxTorem(10px);
+        li {
+            @include flex;
+            @include box_flex;
+            @include direction(column);
+            @include justify(space-around);
+            @include align;
+            i {
+                font-size: pxTorem(16px)!important;
+            }
+        }
+        li.active {
+            i {
+                color: red;
+            }
+            span {
+                color: red;
+            }
+        }
+    }
 }
