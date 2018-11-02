@@ -1,0 +1,90 @@
+@import "_mixin.scss";
+@import "common.scss";
+* {
+    @include sizing;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    @include box_flex;
+    @include direction(column);
+}
+
+header {
+    width: 100%;
+    height: pxTorem(50px);
+    @include box_flex;
+    @include align;
+    padding: 0 pxTorem(10px);
+    background: #06c1ae;
+    border-bottom: 1px solid #21897d;
+    color: #fff;
+    .place {
+        width: pxTorem(60px);
+        height: 100%;
+        @include box_flex;
+        @include align;
+        @include justify(space-around);
+        line-height: pxTorem(50px);
+        span {
+            display: block;
+            font-size: pxTorem(16px);
+        }
+        .icon {
+            font-size: pxTorem(12px)!important;
+        }
+    }
+    form {
+        @include flex;
+        height: 70%;
+        margin: 0 pxTorem(15px);
+        background: rgba(0, 0, 0, .15);
+        border-radius: pxTorem(6px);
+        padding: 0 pxTorem(10px);
+        @include box_flex;
+        @include align;
+        span {
+            width: pxTorem(25px);
+            color: #fff;
+            font-size: pxTorem(16px)!important;
+        }
+        input {
+            @include flex;
+            height: 100%;
+            line-height: 1.5em;
+            font-size: pxTorem(14px);
+        }
+        input::-webkit-input-placeholder {
+            color: #68dbce;
+            font-size: pxTorem(16px);
+        }
+    }
+    .mine {
+        width: pxTorem(30px);
+        height: 100%;
+        @include box_flex;
+        @include direction(column);
+        @include justify(space-around);
+        @include align;
+        span {
+            font-size: pxTorem(14px);
+        }
+        .icon {
+            font-size: pxTorem(20px)!important;
+        }
+    }
+}
+
+section {
+    width: 100%;
+    @include flex;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+footer {
+    width: 100%;
+    height: pxTorem(100px);
+    background: #f0efed;
+}
