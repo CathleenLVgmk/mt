@@ -3,6 +3,8 @@ var sass = require('gulp-sass');
 var clean = require('gulp-clean-css');
 var url = require('url');
 var path = require('path');
+var uglify = require('gulp-uglify');
+var babel = require('gulp-babel');
 var fs = require('fs');
 var json = require('./src/data.json');
 var server = require('gulp-webserver');
@@ -12,8 +14,16 @@ gulp.task('default', function() {
         .pipe(clean())
         .pipe(gulp.dest('./src/css'));
 })
+gulp.task('uglify', function() {
+    return gulp.src('./src/js/demo.js')
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
+        .pipe(uglify())
+        .pipe(gulp.dest('./build'))
+})
 gulp.task('watch', function() {
-    return gulp.watch('./src/scss/demo.scss', gulp.series('default'))
+    return gulp.watch(['./src/scss/demo.scss', './src/js/demo.js'], gulp.series('default', 'uglify'))
 })
 
 gulp.task('ser', function() {
@@ -50,4 +60,4 @@ gulp.task('ser', function() {
         }))
 })
 
-gulp.task('dev', gulp.series('default', 'ser', 'watch', ));
+gulp.task('dev', gulp.series('default', 'ser', 'watch'));
